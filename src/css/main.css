@@ -1,0 +1,424 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Webicons by Adam Fairhead at Fairhead Creative http://fairheadcreative.com
+   ========================================================================== */
+.webicon {
+    display: inline-block;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    text-indent: -999em;
+    text-align: left;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: none;
+    position: relative;
+}
+.webicon:hover {
+    margin: -1px 0 1px;
+    -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.65);
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.65);
+    top: -2px;
+}
+.webicon:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: 0;
+}
+
+.webicon.small {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.webicon.large {
+    width: 48px;
+    height: 48px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.webicon.coderwall {background: url("../img/webicons/webicon-coderwall-m.png"); }
+.webicon.coderwall.large {background: url("../img/webicons/webicon-coderwall.png"); }
+.webicon.coderwall.small {background: url("../img/webicons/webicon-coderwall-s.png"); }
+
+.webicon.github {background: url("../img/webicons/webicon-github-m.png"); }
+.webicon.github.large {background: url("../img/webicons/webicon-github.png"); }
+.webicon.github.small {background: url("../img/webicons/webicon-github-s.png"); }
+
+.webicon.googleplus {background: url("../img/webicons/webicon-googleplus-m.png"); }
+.webicon.googleplus.large {background: url("../img/webicons/webicon-googleplus.png"); }
+.webicon.googleplus.small {background: url("../img/webicons/webicon-googleplus-s.png"); }
+
+.webicon.stackoverflow {background: url("../img/webicons/webicon-stackoverflow-m.png"); }
+.webicon.stackoverflow.large {background: url("../img/webicons/webicon-stackoverflow.png"); }
+.webicon.stackoverflow.small {background: url("../img/webicons/webicon-stackoverflow-s.png"); }
+
+.webicon.linkedin {background: url("../img/webicons/webicon-linkedin-m.png"); }
+.webicon.linkedin.large {background: url("../img/webicons/webicon-linkedin.png"); }
+.webicon.linkedin.small {background: url("../img/webicons/webicon-linkedin-s.png"); }
+
+.webicon.flickr {background: url("../img/webicons/webicon-flickr-m.png"); }
+.webicon.flickr.large {background: url("../img/webicons/webicon-flickr.png"); }
+.webicon.flickr.small {background: url("../img/webicons/webicon-flickr-s.png"); }
+
+
+/* ==========================================================================
+   Author's styles
+   ========================================================================== */
+
+
+body {
+    margin: 0 auto;
+    width: 50em;
+    max-width: 80%;
+    background: #fcfcfc;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}
+
+.me-header {
+    margin-top: 2em;
+
+}
+    .me-header h1 {
+        margin-top: 0;
+        margin-bottom: 0.33em;
+        font-size: 3em;
+        line-height: 1.0;
+    }
+    .me-greeting {
+        font-size: 1.5em;
+        margin: 0;
+        /* pull left? */
+        margin-left: -1.5em;
+    }
+
+.me-info {
+
+}
+    .me-info p:first-child {
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+.me-photo {
+    float: right;
+}
+    .me-photo img {
+        border-radius: 10px;
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+
+.me-social {
+
+}
+    .me-social ul {
+        list-style-type: none;
+        margin-left: 0;
+        padding: 0;
+    }
+        .me-social ul li {
+            float: left;
+            margin-right: 1em;
+            margin-left: 0;
+        }
+
+.me-footer {
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Alternative layouts
+   ========================================================================== */
+
+@media only screen and (max-device-width: 35em) {
+
+    .me-photo {
+        float: none;
+    }
+    .me-photo img {
+        border-radius: 10px;
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    
+    /* restore webicons accessibility */
+    .webicon {
+        text-indent: 0;
+        width: auto !important;
+        height: auto !important;
+        border-radius: 0 !important;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+}
