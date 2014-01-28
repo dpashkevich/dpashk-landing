@@ -6,7 +6,7 @@
     Dmitry Pashkevich
 
 # THANKS
-
+    Julia Tarasova for favicon. She is a teacher, designer and artist, check her out at www.artjt.ru and www.joyarts.ru
 
 
 # TECHNOLOGY COLOPHON
