@@ -168,7 +168,7 @@ body {
     margin: 0 auto;
     width: 50em;
     max-width: 80%;
-    background: #fcfcfc;
+    background: #f3f3f3;
 }
 
 h1 {
@@ -411,7 +411,7 @@ a:hover {
     h3 {
         page-break-after: avoid;
     }
-    
+
     /* restore webicons accessibility */
     .webicon {
         text-indent: 0;
