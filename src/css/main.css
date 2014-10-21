@@ -156,6 +156,10 @@ textarea {
 .webicon.flickr.large {background: url("../img/webicons/webicon-flickr.png"); }
 .webicon.flickr.small {background: url("../img/webicons/webicon-flickr-s.png"); }
 
+.webicon.instagram {background: url("../img/webicons/webicon-instagram-m.png"); }
+.webicon.instagram.large {background: url("../img/webicons/webicon-instagram.png"); }
+.webicon.instagram.small {background: url("../img/webicons/webicon-instagram-s.png"); }
+
 
 /* ==========================================================================
    Author's styles
